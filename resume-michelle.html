@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michelle F. - Executive Assistant to the CEO | First Page Sage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #3498db;
+      --dark: #2c3e50;
+      --highlight: #f1c40f;
+      --white: #FFFFFF;
+      --gray-50: #F8FAFB;
+      --gray-100: #F1F5F4;
+      --gray-200: #E2E8E7;
+      --gray-400: #94A3A0;
+      --gray-600: #4B5E5A;
+      --gray-700: #374845;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Lato', sans-serif;
+    }
+    body { font-family: var(--font-body); background: var(--gray-50); color: var(--dark); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .back-link { display: block; background: var(--dark); padding: 12px 40px; font-family: var(--font-heading); font-size: 14px; font-weight: 500; }
+    .back-link a { color: var(--highlight); text-decoration: none; transition: color 0.2s; }
+    .back-link a:hover { color: var(--white); }
+    .back-link a::before { content: "\2190\00a0\00a0"; }
+    header { background: var(--dark); padding: 48px 40px 52px; position: relative; overflow: hidden; }
+    header::after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .header-brand { font-family: var(--font-heading); font-size: 32px; font-weight: 700; color: var(--white); letter-spacing: -0.5px; margin-bottom: 4px; }
+    .header-brand span { color: var(--highlight); }
+    .header-subtitle { font-family: var(--font-body); font-size: 14px; font-weight: 400; color: var(--gray-400); text-transform: uppercase; letter-spacing: 2px; }
+    .candidate-banner { background: linear-gradient(135deg, var(--primary), #f1c40f); padding: 36px 40px; color: var(--white); }
+    .candidate-name { font-family: var(--font-heading); font-size: 28px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 6px; }
+    .candidate-title { font-size: 16px; font-weight: 400; opacity: 0.9; margin-bottom: 12px; }
+    .candidate-contact { display: flex; flex-wrap: wrap; gap: 20px; font-size: 13px; opacity: 0.85; }
+    .resume-body { max-width: 900px; margin: 0 auto; padding: 40px 40px 60px; }
+    .section { margin-bottom: 36px; }
+    .section-title { font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1.5px; padding-bottom: 10px; border-bottom: 2px solid var(--gray-200); margin-bottom: 18px; }
+    .summary-text { font-size: 15px; color: var(--gray-700); line-height: 1.75; }
+    .skills-grid { display: grid; grid-template-columns: 170px 1fr; gap: 10px 20px; font-size: 14px; }
+    .skill-label { font-weight: 600; color: var(--dark); padding: 4px 0; }
+    .skill-value { color: var(--gray-600); padding: 4px 0; line-height: 1.6; }
+    .experience-item { margin-bottom: 24px; padding-left: 20px; border-left: 3px solid var(--primary); }
+    .experience-item:last-child { margin-bottom: 0; }
+    .exp-header { margin-bottom: 8px; }
+    .exp-role { font-family: var(--font-heading); font-size: 16px; font-weight: 700; color: var(--dark); }
+    .exp-company { font-size: 14px; font-weight: 500; color: var(--primary); }
+    .exp-meta { font-size: 13px; color: var(--gray-400); margin-top: 2px; }
+    .exp-desc { font-size: 14px; color: var(--gray-600); line-height: 1.65; }
+    .exp-bullets { font-size: 14px; color: var(--gray-600); line-height: 1.65; padding-left: 20px; margin-top: 6px; }
+    .exp-bullets li { margin-bottom: 4px; }
+    .education-item, .cert-item, .lang-item { font-size: 15px; margin-bottom: 8px; }
+    .edu-degree, .cert-name { font-weight: 600; color: var(--dark); }
+    .edu-school { color: var(--primary); font-weight: 500; }
+    .edu-year { font-size: 13px; color: var(--gray-400); }
+    footer { background: var(--dark); padding: 32px 40px; text-align: center; position: relative; }
+    footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .footer-text { font-family: var(--font-heading); font-size: 14px; color: var(--gray-400); }
+    .footer-text strong { color: var(--white); }
+    .footer-text .accent { color: var(--highlight); }
+    .footer-sub { font-size: 12px; color: var(--gray-600); margin-top: 8px; }
+    @media (max-width: 640px) {
+      header, .candidate-banner, .resume-body, .back-link, footer { padding-left: 20px; padding-right: 20px; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .candidate-contact { flex-direction: column; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="back-link"><a href="index.html">Back to All Candidates</a></div>
+  <header>
+    <div class="header-brand">First Page Sage<span>.</span></div>
+    <div class="header-subtitle">Candidate Resume</div>
+  </header>
+  <div class="candidate-banner">
+    <div class="candidate-name">Michelle F.</div>
+    <div class="candidate-title">Executive Assistant to the CEO | Panamá</div>
+    <div class="candidate-contact">
+      <span>Panamá</span>
+      <span>15 yrs Executive Assistant experience</span>
+    </div>
+  </div>
+  <div class="resume-body">
+    <div class="section"><div class="section-title">Professional Summary</div><p class="summary-text">Senior Executive &amp; Operations Support Professional with 20+ years supporting C-level leaders and cross-functional teams in international and remote settings. Expertise in executive partnership, recruiting support, vendor management, and workflow optimization. Skilled in Google Workspace, Microsoft Office, HubSpot, Asana, Calendly, and Slack.</p></div>
+    <div class="section"><div class="section-title">Skills &amp; Tech Stack</div><div class="skills-grid">
+    <div class="skill-label">Technical Skills</div>
+    <div class="skill-value">Microsoft Office Suite, Google Workspace, HubSpot, Asana, Slack, Teams, Telegram, Calendly, Google Calendar, Outlook Calendar, ChatGPT and similar AI platforms, Zoom, SAP</div>
+    <div class="skill-label">Core Competencies</div>
+    <div class="skill-value">Executive &amp; Calendar Management, Recruiting Support &amp; Candidate Coordination, Vendor Management &amp; Operations Support, Event Planning &amp; Coordination, Cross-functional Project Coordination, Workflow Optimization &amp; Documentation, Strong Organizational and Problem-Solving Skills, Excellent Written and Verbal Communication</div></div></div>
+    <div class="section"><div class="section-title">Work Experience</div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Senior Executive Assistant (Contract)</div>
+        <div class="exp-company">International Professional Services – Cyprus</div>
+        <div class="exp-meta">Jun 2024 – Present</div>
+      </div>
+      <ul class="exp-bullets"><li>Manage complex executive calendars, priorities, and appointments for senior leadership.</li><li>Act as primary liaison between executives, clients, and stakeholders, ensuring seamless communication.</li><li>Connect high-profile clients with strategic partners, fostering tailored collaborations.</li><li>Oversee vendor management: contracting, negotiation support, quotation review, and comparison.</li><li>Coordinate cross-functional projects and track deliverables to ensure timely execution.</li><li>Organize corporate events, conferences, and real estate tours.</li><li>Handle confidential information with discretion.</li><li>Utilize Zoom, HubSpot, Asana, and Google Workspace for daily operations.</li><li>Standardize documentation and processes to improve efficiency.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Senior Executive &amp; Operations Assistant (Temporary Contract)</div>
+        <div class="exp-company">Panama Consulting Solutions – Panama</div>
+        <div class="exp-meta">Jan 2023 – Jun 2024</div>
+      </div>
+      <ul class="exp-bullets"><li>Scheduled and coordinated candidate interviews, ensuring timely communication and availability alignment.</li><li>Conducted interviews and documented notes to support evaluation and shortlist decisions.</li><li>Maintained organized recruiting pipelines, ensuring accuracy of candidate data.</li><li>Coordinated internal events: training sessions, workshops, and professional development activities.</li><li>Served as point of contact for vendors and external partners, ensuring smooth coordination and follow-ups.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Financial Process Assistant LAN (Remote)</div>
+        <div class="exp-company">Syngenta Crop Protection S.A. – Panama</div>
+        <div class="exp-meta">Jul 2013 – Jan 2023</div>
+      </div>
+      <ul class="exp-bullets"><li>Generated and verified invoices for LAN countries using SAP and electronic billing systems.</li><li>Managed purchasing processes: supplier registration, purchase orders, invoice records, and service entries.</li><li>Coordinated travel arrangements and executive calendars for regional teams.</li><li>Organized company events, conferences, and seminars across Panama, Mexico, Guatemala, and Colombia.</li><li>Provided administrative support to cross-country teams, ensuring compliance and accuracy in financial documentation.</li></ul>
+    </div></div>
+    <div class="section"><div class="section-title">Education</div>
+    <div class="education-item">
+      <div class="edu-degree">Law Studies</div>
+      <div class="edu-school">Universidad Santa María La Antigua (USMA), Panama</div>
+      <div class="edu-year">Completed 3 years of Bachelor's program</div>
+    </div></div>
+    
+    
+  </div>
+  <footer>
+    <div class="footer-text">Presented by <strong>Sagan</strong> for <strong class="accent">First Page Sage</strong></div>
+    <div class="footer-sub">getsagan.com · Redefining Recruitment</div>
+  </footer>
+</body>
+</html>
